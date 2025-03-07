@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo & Maria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gustavo & Maria</h1>
+        <div class="chat-box" id="chat-box">
+            <p id="chat-message">Escolha Uma Opção!</p>
+        </div>
+        <button id="skip-button">Lola</button>
+        <button id="charlie-button">Charlie</button>
+    </div>
+
+    <script>
+        // Redireciona para a página de escolha das Marias
+        document.getElementById('skip-button').addEventListener('click', function () {
+            window.location.href = "maria.html";
+        });
+
+        // Redireciona para a página do Charlie
+        document.getElementById('charlie-button').addEventListener('click', function () {
+            window.location.href = "charlie.html";
+        });
+    </script>
+</body>
+</html>

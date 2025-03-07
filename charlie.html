@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Charlie</h1>
+
+        <!-- Botão da Aliança -->
+        <button class="charlie-option-button" id="option1">Aliança</button>
+
+        <!-- Conteúdo da Aliança (inicialmente escondido) -->
+        <div id="alianca-content" class="hidden">
+            <img src="https://aliancascriativas.com.br/wp-content/uploads/2023/02/alianca-hello-kitty-prata.jpg" alt="Aliança Hello Kitty" class="alianca-image">
+            <p class="alianca-text">NAMORE COMIGO MINHA MARIA!!!</p>
+        </div>
+
+        <!-- Botão Dedicatória -->
+        <button class="charlie-option-button" id="option2">Dedicatória</button>
+
+        <!-- Conteúdo da Dedicatória (inicialmente escondido) -->
+        <div id="dedicatoria-content" class="hidden">
+            <p class="dedicatoria-text">
+                Fomos felizes e felizes fomos<br>
+                E se já não somos, meu amor<br>
+                Não se preocupe não<br>
+                Aperte a minha mão<br>
+                Até a luz sumir em meio à escuridão<br>
+                Você vai confiar em mim
+            </p>
+        </div>
+
+        <!-- Botão Voltar -->
+        <button class="maria-button" onclick="window.location.href='index.html'">Voltar</button>
+    </div>
+
+    <script>
+        // Mostra o conteúdo da Aliança ao clicar no botão "Aliança"
+        document.getElementById('option1').addEventListener('click', function () {
+            const aliancaContent = document.getElementById('alianca-content');
+            aliancaContent.classList.remove('hidden'); // Remove a classe que esconde o conteúdo
+        });
+
+        // Mostra o conteúdo da Dedicatória ao clicar no botão "Dedicatória"
+        document.getElementById('option2').addEventListener('click', function () {
+            const dedicatoriaContent = document.getElementById('dedicatoria-content');
+            dedicatoriaContent.classList.remove('hidden'); // Remove a classe que esconde o conteúdo
+        });
+    </script>
+</body>
+</html>
